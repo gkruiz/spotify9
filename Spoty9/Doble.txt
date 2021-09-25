@@ -1,0 +1,19 @@
+digraph G {
+rankdir=LR;
+node [shape=record];
+node0[label = "{<ptr>  Ant |<val>[Still Striving]| <ptr>  sigui}"];
+node1[label = "{<ptr>  Ant |<val>[Generico]| <ptr>  sigui}"];
+node2[label = "{<ptr>  Ant |<val>[Generico]| <ptr>  sigui}"];
+node3[label = "{<ptr>  Ant |<val>[Kisses]| <ptr>  sigui}"];
+node4[label = "{<ptr>  Ant |<val>[Asking]| <ptr>  sigui}"];
+"node0":ptr->"Nodo -1"
+"node0":ptr->"node1"
+"node1":ptr->"node0"
+"node1":ptr->"node2"
+"node2":ptr->"node1"
+"node2":ptr->"node3"
+"node3":ptr->"node2"
+"node3":ptr->"node4"
+"node4":ptr->"node3"
+"node4":ptr->"Nodo null"
+}
